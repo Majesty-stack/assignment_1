@@ -1,0 +1,226 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.logo img{
+    width: 99px;
+    height: 52px;
+    border-radius: 5px;
+}
+
+.menu{
+    background-color: #FFF2F3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar_menu{
+    align-items: center;
+}
+
+.navbar_menu nav a {
+    font-size: 14px;
+    font-weight: 700px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar_menu nav a:hover{
+    text-decoration: underline;
+}
+.extra{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.extra a{
+    text-decoration: none;
+    }
+    .extra a:hover{
+        text-decoration: underline;
+    }
+    .extra button{
+        background-color: #96BB7C;
+        border: none;
+        margin-left: 45px;
+        padding: 15px 25px 15px 25px;
+        border-radius: 5px;
+        align-items: center;
+       
+        display: flex;
+        padding: 15px 25px;
+        gap: 15px;
+    }
+    .extra button:hover{
+        background-color: #286000;
+    }
+    .extra button a{
+        color: #ffffff;
+    }
+    .extra p a{
+        color: #96BB7C;
+    }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF2F3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Page Layout */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Hero Image Styling */
+.hero_image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero_image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Login Container */
+.login-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Prompt */
+.signup-prompt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-prompt p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.signup-prompt a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .socials img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}

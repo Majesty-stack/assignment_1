@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Tech Titans</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <div class="logo">
+            <img src="Assets/titans.png" alt="Tech Titans Logo">
+        </div>
+        <div class="navbar_menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="extra">
+            <p><a href="login.html">Login</a></p>
+            <button onclick="window.location.href='reg.html'">
+                Join Now <img src="Assets/Vector.svg" alt="Icon">
+            </button>
+        </div>
+    </div>
+
+    <!-- Registration Page Content -->
+    <div class="registration-page">
+        <!-- Hero Image Section -->
+        <div class="hero_image">
+            <img src="Assets/tech.png" alt="Tech Titans Logo">
+        </div>
+
+        <!-- Registration Form Section -->
+        <div class="registration-container">
+            <div class="registration-form">
+                <h2>Create an Account</h2>
+                <form action="#" method="POST">
+                    
+                    <!-- First Name -->
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    </div>
+
+                    <!-- Middle Name -->
+                    <div class="input-group">
+                        <label for="middle-name">Middle Name</label>
+                        <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle name" required>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="input-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required>
+                    </div>
+
+                    <!-- School -->
+                    <div class="input-group">
+                        <label for="school">School</label>
+                        <input type="text" id="school" name="school" placeholder="Enter your school" required>
+                    </div>
+
+                    <!-- Occupation -->
+                    <div class="input-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+
+                    <!-- Register Button -->
+                    <button type="submit" class="register-btn">Register</button>
+
+                    <!-- Login Redirect -->
+                    <div class="login-redirect">
+                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with ❤️ by Tech Titans | © 2024 All Rights Reserved</p>
+            <div class="socials">
+                <a href="#"><img src="Assets/facebook-filled.svg" alt="Facebook"></a>
+                <a href="#"><img src="Assets/instagram-outlined.svg" alt="Instagram"></a>
+                <a href="#"><img src="Assets/twitter-outlined.svg" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
